@@ -32,11 +32,11 @@
     },
     "flags": {
       "name": "keyword.other.rtsstf.flag",
-      "match": "\\b(KEY|LINK|NONFIXED|ARROW|OVERSCALE|PRECISE|LAMP|LIGHT_(CONE|SPHERE)|POSITIONAL|RUNNING|LOOP|FRAME|CONTROLLER(X|Y)|CONTINUOUS|RETURNS)\\b"
+      "match": "\\b(SCREEN|LEFT|TOP|RIGHT|BOTTOM|KEY|LINK|NONFIXED|ARROW|OVERSCALE|PRECISE|LAMP|LIGHT_(CONE|SPHERE)|POSITIONAL|RUNNING|LOOP|FRAME|CONTROLLER(X|Y)|CONTINUOUS|RETURNS|CHECKDISTANCEONPRESS)\\b"
     },
     "numbers": {
       "name": "constant.numeric.rtsstf",
-      "match": "-?\\d+(\\.\\d+)?"
+      "match": "-?\\d+(\\.\\d+)?(e\\d+)?"
     },
     "section": {
       "begin": "(\\w+)\\s*(\\()",

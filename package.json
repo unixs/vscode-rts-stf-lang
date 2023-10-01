@@ -2,7 +2,7 @@
   "name": "vscode-rts-stf-lang",
   "displayName": "RTS Structured Text Format syntax support",
   "description": "RTS Structured Text Format configuration language syntax support",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "AlexanderFeodorov",
   "author": {
     "name": "Alexander Feodorov"

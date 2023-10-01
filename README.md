@@ -6,12 +6,12 @@
 - Folding
 - File icon
 
-## Known Issues
-
-- Problem with exponent numbers
-
 ## Release Notes
 
 ### 0.1.0
 
 Initial release
+
+### 0.1.1
+
+Bugfixes

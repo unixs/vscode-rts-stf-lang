@@ -3,7 +3,18 @@
   "displayName": "RTS Structured Text Format syntax support",
   "description": "RTS Structured Text Format configuration language syntax support",
   "version": "0.1.0",
+  "author": {
+    "name": "Alexander Feodorov"
+  },
   "license": "MIT",
+  "homepage": "https://github.com/unixs/vscode-rts-stf-lang",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/unixs/vscode-rts-stf-lang"
+  },
+  "bugs": {
+      "url": "https://github.com/unixs/vscode-rts-stf-lang/issues"
+  },
   "engines": {
     "vscode": "^1.82.0"
   },

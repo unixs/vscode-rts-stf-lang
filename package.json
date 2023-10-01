@@ -1,0 +1,31 @@
+{
+  "name": "vscode-rts-stf-lang",
+  "displayName": "RTS Structured Text Format syntax support",
+  "description": "RTS Structured Text Format configuration language syntax support",
+  "version": "0.1.0",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "rtsstf",
+      "aliases": ["RTS Structured Text Format", "rtsstf"],
+      "extensions": [".wag",".eng",".sd",".sms",".rtseng"],
+      "firstLine": "^SIM.+______",
+      "configuration": "./language-configuration.json",
+      "icon": {
+        "dark": "./images/rtsstf-icon.svg",
+        "light": "./images/rtsstf-icon.svg"
+      }
+    }],
+    "grammars": [{
+      "language": "rtsstf",
+      "scopeName": "source.rtsstf",
+      "path": "./syntaxes/rtsstf.tmLanguage.json"
+    }]
+  }
+}

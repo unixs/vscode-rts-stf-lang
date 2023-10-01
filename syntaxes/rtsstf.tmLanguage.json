@@ -1,0 +1,67 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "RTS Structure Text Format",
+	"patterns": [
+		{
+			"include": "#header"
+		},
+    {
+      "include": "#section"
+    }
+	],
+	"repository": {
+		"header": {
+      "name": "keyword.other.rtsstf.header",
+			"begin": "SIMISA",
+			"end": "______"
+		},
+		"strings": {
+			"name": "string.quoted.double",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape",
+					"match": "\\\\."
+				}
+			]
+		},
+    "word": {
+      "name":"variable.parameter",
+      "match": "\\S+"
+    },
+    "flags": {
+      "name": "keyword.other.rtsstf.flag",
+      "match": "\\b(KEY|LINK|NONFIXED|ARROW|OVERSCALE|PRECISE|LAMP|LIGHT_(CONE|SPHERE)|POSITIONAL|RUNNING|LOOP|FRAME|CONTROLLER(X|Y)|CONTINUOUS|RETURNS)\\b"
+    },
+    "numbers": {
+      "name": "constant.numeric.rtsstf",
+      "match": "-?\\d+(\\.\\d+)?"
+    },
+    "section": {
+      "begin": "(\\w+)\\s*(\\()",
+      "end": "\\)",
+      "beginCaptures": {
+        "0": { "name": "entity.name.function.rtsstf.sectionName" }
+      },
+      "patterns": [
+        {
+          "include": "#section"
+        },
+        {
+          "include": "#strings"
+        },
+        {
+          "include": "#numbers"
+        },
+        {
+          "include": "#flags"
+        },
+        {
+          "include": "#word"
+        }
+      ]
+    }
+	},
+	"scopeName": "source.rtsstf"
+}
